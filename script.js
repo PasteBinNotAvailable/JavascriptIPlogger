@@ -1,4 +1,4 @@
-function data(json) {
+function getdata(json) {
  var dataip = json.ip;
   var agent = navigator.userAgent;
   var lang = navigator.language;
